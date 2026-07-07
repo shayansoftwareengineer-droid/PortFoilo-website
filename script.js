@@ -275,3 +275,75 @@ window.addEventListener("load", () => {
     console.log("🚀 Shayan Portfolio Loaded Successfully");
 
 });
+// ===========================
+// PREMIUM GOLD MOUSE TRAIL
+// ===========================
+
+const container = document.getElementById("trail-container");
+
+document.addEventListener("mousemove", (e) => {
+
+    const trail = document.createElement("div");
+    trail.classList.add("trail");
+
+    trail.style.left = e.clientX + "px";
+    trail.style.top = e.clientY + "px";
+
+    container.appendChild(trail);
+
+    setTimeout(() => {
+        trail.remove();
+    }, 800);
+
+});
+
+// ===========================
+// AOS ANIMATION
+// ===========================
+
+AOS.init({
+
+    duration: 1000,
+    easing: "ease-in-out",
+    once: true,
+    offset: 100
+
+});
+
+// ===========================
+// MOBILE MENU
+// ===========================
+
+const menuIcon = document.getElementById("menuIcon");
+const navMenu = document.getElementById("navMenu");
+
+menuIcon.addEventListener("click", () => {
+
+    navMenu.classList.toggle("active");
+
+    if(navMenu.classList.contains("active")){
+
+        menuIcon.innerHTML = "✖";
+
+    }else{
+
+        menuIcon.innerHTML = "☰";
+
+    }
+
+});
+
+// ===========================
+// CLOSE MENU AFTER CLICK
+// ===========================
+
+document.querySelectorAll("#navMenu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navMenu.classList.remove("active");
+        menuIcon.innerHTML = "☰";
+
+    });
+
+});
