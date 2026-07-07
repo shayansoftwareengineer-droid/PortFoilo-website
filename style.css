@@ -401,6 +401,268 @@ display:block !important;
     transform:translateY(-6px);
 
 }
+/* ==========================
+MOBILE BUTTONS
+========================== */
+
+.mobile-buttons{
+
+    display:none;
+
+}
+
+/* ==========================
+MOBILE VIEW
+========================== */
+
+@media(max-width:992px){
+
+.menu-icon{
+
+display:block;
+
+}
+
+#navMenu{
+
+position:absolute;
+
+top:100%;
+left:0;
+
+width:100%;
+
+background:#111;
+
+max-height:0;
+
+overflow:hidden;
+
+transition:.5s;
+
+}
+
+#navMenu.active{
+
+max-height:700px;
+
+}
+
+#navMenu ul{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:25px;
+
+padding:30px 0 15px;
+
+}
+
+/* Show Buttons */
+
+.mobile-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:15px;
+
+padding-bottom:30px;
+
+}
+
+.mobile-buttons a{
+
+width:85%;
+
+text-decoration:none;
+
+}
+
+.download-btn{
+
+width:100%;
+
+padding:15px;
+
+background:#FFD700;
+
+border:none;
+
+border-radius:40px;
+
+font-size:16px;
+
+font-weight:700;
+
+cursor:pointer;
+
+color:#000;
+
+}
+
+.hire-btn{
+
+width:100%;
+
+padding:15px;
+
+background:transparent;
+
+border:2px solid #FFD700;
+
+border-radius:40px;
+
+font-size:16px;
+
+font-weight:700;
+
+cursor:pointer;
+
+color:#fff;
+
+}
+
+}
+
+/* ==========================
+DESKTOP
+========================== */
+
+@media(min-width:993px){
+
+.menu-icon{
+
+display:none;
+
+}
+
+.mobile-buttons{
+
+display:none;
+
+}
+
+}
+/* Desktop Buttons */
+
+.desktop-buttons{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.desktop-buttons button{
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.download-btn{
+    background:#FFD700;
+    color:#000;
+    border:none;
+}
+
+.hire-btn{
+    background:transparent;
+    color:#fff;
+    border:2px solid #FFD700;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.desktop-buttons{
+    display:none;
+}
+
+.mobile-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+}
+
+/* Desktop */
+
+@media(min-width:993px){
+
+.mobile-buttons{
+    display:none;
+}
+
+}
+/* ==========================
+BUTTON ANIMATION
+========================== */
+
+.download-btn,
+.hire-btn{
+
+    transition:0.4s ease;
+
+}
+
+/* Download Button */
+
+.download-btn{
+
+    background:linear-gradient(135deg,#FFD700,#b8860b);
+
+    color:#000;
+
+    border:none;
+
+    box-shadow:0 0 25px rgba(255,215,0,.35);
+
+}
+
+.download-btn:hover{
+
+    transform:translateY(-6px) scale(1.05);
+
+    box-shadow:
+    0 0 20px #FFD700,
+    0 0 40px rgba(255,215,0,.8);
+
+}
+
+/* Hire Me Button */
+
+.hire-btn{
+
+    background:transparent;
+
+    color:#fff;
+
+    border:2px solid #FFD700;
+
+}
+
+.hire-btn:hover{
+
+    background:#FFD700;
+
+    color:#000;
+
+    transform:translateY(-6px) scale(1.05);
+
+    box-shadow:
+    0 0 20px #FFD700,
+    0 0 40px rgba(255,215,0,.8);
+
+}
 
 /* ==========================
    HERO IMAGE
