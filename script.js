@@ -134,6 +134,8 @@ form.addEventListener("submit",function(e){
 
 e.preventDefault();
 
+document.getElementById("reply_to").value = form.from_email.value;
+
 const button = form.querySelector("button");
 
 const oldText = button.innerHTML;
@@ -267,52 +269,8 @@ document.querySelectorAll("section").forEach((section) => {
 
 
 // ==========================================
-// PAGE LOADED
-// ==========================================
-
-window.addEventListener("load", () => {
-
-    console.log("🚀 Shayan Portfolio Loaded Successfully");
-
-});
-// ===========================
-// PREMIUM GOLD MOUSE TRAIL
-// ===========================
-
-const container = document.getElementById("trail-container");
-
-document.addEventListener("mousemove", (e) => {
-
-    const trail = document.createElement("div");
-    trail.classList.add("trail");
-
-    trail.style.left = e.clientX + "px";
-    trail.style.top = e.clientY + "px";
-
-    container.appendChild(trail);
-
-    setTimeout(() => {
-        trail.remove();
-    }, 800);
-
-});
-
-// ===========================
-// AOS ANIMATION
-// ===========================
-
-AOS.init({
-
-    duration: 1000,
-    easing: "ease-in-out",
-    once: true,
-    offset: 100
-
-});
-
-// ===========================
 // MOBILE MENU
-// ===========================
+// ==========================================
 
 const menuIcon = document.getElementById("menuIcon");
 const navMenu = document.getElementById("navMenu");
@@ -333,9 +291,9 @@ menuIcon.addEventListener("click", () => {
 
 });
 
-// ===========================
+// ==========================================
 // CLOSE MENU AFTER CLICK
-// ===========================
+// ==========================================
 
 document.querySelectorAll("#navMenu a").forEach(link => {
 
@@ -345,5 +303,16 @@ document.querySelectorAll("#navMenu a").forEach(link => {
         menuIcon.innerHTML = "☰";
 
     });
+
+});
+
+
+// ==========================================
+// PAGE LOADED
+// ==========================================
+
+window.addEventListener("load", () => {
+
+    console.log("🚀 Shayan Portfolio Loaded Successfully");
 
 });
