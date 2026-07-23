@@ -86,13 +86,18 @@ body::before{
 
     color:#FFD700;
 
+
     font-size:32px;
+
 
     font-weight:800;
 
+
     letter-spacing:3px;
 
+
     cursor:pointer;
+
 
     transition:.4s;
 
