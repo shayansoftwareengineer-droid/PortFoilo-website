@@ -256,6 +256,42 @@ display:block !important;
 }
 
 }
+
+@media(min-width:993px) and (max-width:1200px){
+
+.navbar{
+
+padding:18px 4%;
+
+}
+
+#navMenu ul{
+
+gap:18px;
+
+}
+
+#navMenu ul li a{
+
+font-size:14px;
+
+}
+
+.desktop-buttons{
+
+gap:10px;
+
+}
+
+.desktop-buttons button{
+
+padding:10px 16px;
+
+font-size:13px;
+
+}
+
+}
 /* ==========================
    HERO SECTION
 ========================== */
@@ -1354,12 +1390,7 @@ width:260px;
 ========================== */
 
 .html{
-    .html{width:0%;}
-.css{width:0%;}
-.js{width:0%;}
-.bootstrap{width:0%;}
-.mysql{width:0%;}
-.seo{width:0%;}
+    width:95%;
 }
 
 .css{
@@ -2370,5 +2401,128 @@ section.show{
     opacity:1;
 
     transform:translateY(0);
+
+}
+/* ==========================
+   EXTRA SMALL PHONES
+   (360px - 420px range: small Android
+   phones, iPhone SE, etc.)
+========================== */
+
+@media(max-width:420px){
+
+.navbar{
+
+padding:16px 5%;
+
+}
+
+.logo,
+.navbar h1{
+
+font-size:26px;
+
+}
+
+.hero{
+
+padding:120px 18px 60px;
+
+}
+
+.hero-text h2{
+
+font-size:30px;
+
+}
+
+.hero-text p{
+
+font-size:15px;
+
+line-height:26px;
+
+}
+
+.section-heading h2{
+
+font-size:26px;
+
+}
+
+.section-heading p{
+
+font-size:15px;
+
+}
+
+.about-left h2{
+
+font-size:28px;
+
+}
+
+.info-box{
+
+padding:18px;
+
+}
+
+.skill-card{
+
+padding-left:60px;
+
+padding-right:15px;
+
+}
+
+.project-content h3{
+
+font-size:22px;
+
+}
+
+.project-btn a{
+
+padding:12px 20px;
+
+font-size:14px;
+
+}
+
+.service-card{
+
+padding:30px 20px;
+
+}
+
+.contact-info h3{
+
+font-size:26px;
+
+}
+
+.contact-box{
+
+padding:14px;
+
+gap:14px;
+
+}
+
+.contact-form{
+
+padding:18px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+padding:14px;
+
+font-size:15px;
+
+}
 
 }
