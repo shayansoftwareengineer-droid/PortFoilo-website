@@ -1756,10 +1756,15 @@ section.show{
     transform:translateY(0);
 
 }
-/* ==========================
-   EXTRA SMALL PHONES
-   (360px - 420px range: small Android
-   phones, iPhone SE, etc.)
-========================== */
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.1);
+    margin-top:60px;
+    text-align:center;
+    padding-top:20px;
+}
 
+.footer-bottom p{
+    color:#999;
+    font-size:15px;
+}
 
